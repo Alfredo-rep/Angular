@@ -1,0 +1,12 @@
+.fondoCarta{
+    background-color: #B7FFC4;
+}
+.fondoCarta:hover{
+    background-color: #ff9f9f;
+    transition:all .5s ease-in-out;
+    -webkit-transform:scale(.9);
+    transform:scale(.9);
+}
+.black{
+    background-color: #143D32;
+}

@@ -1,0 +1,68 @@
+
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="">
+                <div class=" text-center">
+                    <a href=""><img src="https://imgs.search.brave.com/UXNQM1yt7Nr5MBkqTivPhm5fpwkm_gWuA2ejdiaIXXo/rs:fit:501:189:1/g:ce/aHR0cHM6Ly9jYW1v/LmdpdGh1YnVzZXJj/b250ZW50LmNvbS80/MThkOTJlY2JlN2Nk/MTgwNTE1MzAwMWEz/NDE0N2FiN2M5NjUx/MDM0MzJmZjRhNjhl/YWEyZmM1ZDRlNmMx/YjQyLzY4NzQ3NDcw/NzMzYTJmMmY2OTZi/MmU2OTZkNjE2NzY1/NmI2OTc0MmU2OTZm/MmY2ODc3Nzk2Yjcz/NzY2YTM0Njk3NjJm/NzA2ZjZiNjU2NDY1/Nzg1ZjRlNWY1NzY3/NTc3MjRhNGIzMDcz/MmU3MDZlNjc" alt="" border="0"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container ">
+    
+    <div class="row m-4 ">
+   
+            <div *ngFor="let iniciales of listPoke; let numPoke = index" class="col-sm-4"> 
+                <div class="card fondoCarta"(click)="Details(iniciales)" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"style="width: 18rem;">
+                     <img [src]="iniciales.sprites.front_default" class="card-img-top " alt="...">
+                     <div class="card-body  text-center " >
+                         <h5 class="card-title">{{iniciales.name}}</h5>
+                         <p class="card-text">{{numPoke+1}}</p>
+                         <p class="card-text"></p>
+                     </div>
+                 </div>
+                <img [src]="iniciales.poke" alt="">
+            </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Evolucion del pokemon </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-center ">
+                {{informacionPokmeon}}
+            <div class="container-fluid">
+                <div class="table row justify-content-around ">   
+                    <div class="card" style="width: 18rem;">
+                        <div class="" *ngFor="let evoluiones of pokeEvo; let numPoke = index">
+                            <div>
+                                
+                                <div >
+                                    <img [src]="evoluiones.evo.sprites.front_default" class="card-img-top" alt="...">
+                                    
+                                </div>
+                            </div>
+                            <div style="padding-left:10px; padding-bottom: 5px;"></div>
+                        </div>
+                      </div>              
+                    </div>
+            </div>
+
+            </div>
+            <div class="modal-footer">
+                <button  type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
