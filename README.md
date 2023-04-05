@@ -25,3 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+the following doc has been type on Visual Estudio code for the version develpment in 7.66.12 i woke up in the morning at the night cause my girl left my lonely soo 
+lonely i mr lonely catn belive after still by mi side i really wantt do the things right i have no chaising you dreams so happy but now i feel soo lonely mr lonely i noboy fpr my own.
+mr lonelyyy
